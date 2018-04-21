@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <title>متجر عربي | تواصل معنا</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="./css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <!--الشريط العلوي-->
+    <div class="row">
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggler btn custom-btn btn-icon collapsed" data-toggle="collapse" data-target="#navbar-collapsed-menu">
+              <i class="fa fa-bars"></i>
+            </button>
+            <a href="checkout.html" class="navbar-toggler btn custom-btn btn-icon">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <a href="." class="navbar-brand">
+              <img src="images/logo.png" alt="متجر عربي">
+            </a>
+          </div>
+          <form class="form-inline">
+            <input class="form-control custom-form-control search" type="search" placeholder="كلمة البحث .." aria-label="Search">
+            <div class="dropdown categories">
+              <a class="nav-link dropdown-toggle custom-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                اختر فئة
+              </a>
+              <ul class="dropdown-menu custom-dropdown-menu">
+                <li>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" name="search-category" value="men"> رجالي
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" name="search-category" value="women"> نسائي
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" name="search-category" value="kids"> أطفال
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="btn custom-btn-primary" type="submit">ابحث</button>
+          </form>
+          <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">الصفحة الرئيسية</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  أقسام المتجر
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">رجالي</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">نسائي</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">أطفال</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="search.html">البحث المتقدم</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+              </li>
+              <li class="d-none d-lg-block">
+                <a id="btn-shopping-cart" href="checkout.html" class="btn custom-btn btn-icon" title="عربة الشراء" data-toggle="tooltip"
+                  data-placement="bottom">
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!--الخريطة-->
+    <div class="row">
+        <div class="col-12" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1786539269224!2d55.272187714594736!3d25.197196983896184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj+Khalifa!5e0!3m2!1sen!2str!4v1520405541944" 
+            width="100%" height="250" frameborder="0" style="border:0;width: 100%;" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <!--عناصر التّنقّل الفرعيّة-->
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 col-12">
+        <ol class="breadcrumb custom-breadcrumb">
+          <li>
+            <a href=".">الصفحة الرئيسية</a>
+          </li>
+          <li class="active">تواصل معنا</li>
+        </ol>
+      </div>
+    </div>
+
+
+    <div id="contact-options" class="row">
+      <!--معلومات التواصل-->
+      <div class="col-12 col-lg-3 offset-lg-2">
+        <h4 class="heading-with-border-bottom">
+          معلومات التواصل
+        </h4>
+        <div id="contact-info">
+          <div>
+              <i class="fa fa-phone fa-lg"></i>
+              974.4422.7813
+          </div>
+          <div>
+              <i class="fa fa-envelope fa-lg"></i>
+              info@araby.com
+          </div>
+          <div>
+              <i class="fa fa-map-marker fa-lg"></i>
+              العنوان: الإمارات العربية المتحدة، دبي، برج خليفة
+          </div>
+        </div>
+
+        <!--قسم الاشتراك بالنّشرة البريدية-->
+        <h4 class="heading-with-border-bottom">اشترك بالنشرة البريدية</h4>
+        <form id="form-subscription" class="form">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="email" class="form-control custom-form-control" 
+                     placeholder="البريد الإلكتروني" name="email" required>
+              <div class="input-group-btn">
+                  <button class="btn custom-btn btn-primary custom-btn-primary2" type="submit">
+                  متابعة
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!--قسم اترك رسالة-->
+      <div class="col-12 col-lg-6">
+        <h4>اترك رسالة</h4>
+        <form class="form row">
+          <div class="col-md-6 form-group">
+            <input class="form-control input-lg custom-input-lg custom-form-control" name="name" type="text" placeholder="الاسم" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <input class="form-control input-lg custom-input-lg custom-form-control" name="email" type="email" placeholder="البريد الإلكتروني" required>
+          </div>
+          <div class="col-12 form-group">
+            <textarea class="form-control input-lg custom-input-lg custom-form-control" name="message" placeholder="نص الرسالة" required></textarea>
+          </div>
+          <div class="col-12 form-group">
+            <div class="float-right">
+              <button type="submit" class="btn btn-primary custom-btn custom-btn-primary2 custom-btn-with-icon">
+                <span class="float-left">
+                  إرسال الرسالة
+                </span>
+                <span class="float-right">
+                  <span class="far fa-paper-plane"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--ذيل الصفحة-->
+    <div id="footer" class="row">
+      <!--سطر شعارات الشركات-->
+      <div id="brand-logos" class="col-12 text-center">
+        <span>المتجر وكيل مُعتمد لكبرى الشركات العالمية</span>
+        <div class="img-container">
+          <img src="./images/lacoste.png" alt="Lacoste">
+          <img src="./images/adidas.png" alt="Adidas">
+          <img src="./images/puma.png" alt="Puma">
+          <img src="./images/polo.png" alt="Polo">
+        </div>
+      </div>
+      <!--نهاية سطر شعارات الشركات-->
+
+      <!--سطر روابط التنقل ونموذج الاشتراك بالنشرة-->
+      <div id="footer-nav">
+        <div class="container-fluid  text-center">
+          <!--شعار الموقع-->
+          <div class="footer-logo">
+            <a href=".">
+              <img src="./images/logo_footer.png" alt="عربي">
+            </a>
+          </div>
+          <!--نهاية شعار الموقع-->
+
+          <!--عناصر التنقل-->
+          <div id="footer-nav-links" class="col-sm-12 d-none d-md-block">
+            <a href=".">الصفحة الرئيسية</a>
+            <a href="search.html">البحث المتقدّم</a>
+            <a href="contact.html">تواصل معنا</a>
+          </div>
+          <!--نهاية عناصر التنقل-->
+
+          <!--نموذج الاشتراك بالنشرة البريدية-->
+          <div id="newsletter" class="col-xs-12 col-md-6 offset-md-3">
+            <form class="form">
+              <label for="footer-email">
+                تابع النشرة البريديّة لأحدث العروض
+              </label>
+              <br>
+              <div class="input-group">
+                <input id="footer-email" class="form-control custom-form-control" type="email" placeholder="البريد الإلكتروني" name="email"
+                  required>
+                <div class="input-group-btn">
+                  <button type="submit" class="btn btn-primary custom-btn custom-btn-primary2">
+                    متابعة
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--نهاية نموذج الاشتراك بالنشرة البريدية-->
+        </div>
+      </div>
+      <!--نهاية سطر روابط التنقل ونموذج الاشتراك بالنشرة-->
+
+      <!--سطر الحقوق والروابط الاجتماعية-->
+      <div id="footer-copyright-social" class="col-xs-12">
+        <div class="container">
+          <div class="clearfix">
+            <div id="copyright" class="float-left">
+              جميع الحقوق محفوظة للمتجر لسنة 2018
+            </div>
+            <div id="social-icons" class="float-right">
+              <a href="https://www.facebook.com/araby-store">
+                <i class="fa fa-facebook-square fa-lg"></i>
+              </a>
+              <a href="https://www.twitter.com/araby-store">
+                <i class="fa fa-twitter-square fa-lg"></i>
+              </a>
+              <a href="https://www.instagram.com/araby-store">
+                <i class="fa fa-instagram fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--نهاية سطر الحقوق والروابط الاجتماعية-->
+    </div>
+    <!--نهاية ذيل الصفحة-->
+
+  </div>
+
+  <script src="js/jquery-slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
