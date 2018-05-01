@@ -911,10 +911,6 @@ MEDIA QUERY
     .custom-navbar .navbar-nav li a.nav-link {
         padding: 10px 15px;
     }
-
-    .custom-navbar ul.navbar-nav li:last-child a.nav-link {
-		padding-bottom: 2px;
-    }
     
     .navbar-collapse {
         border-top: 1px solid #eee;
